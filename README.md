@@ -9,7 +9,6 @@ through various endpoints.
 
 **Features:**  
 __Technologies Used:__
-
 Java with Spring Framework
 Thymeleaf for UI templating  
 
@@ -35,12 +34,10 @@ Assigns a specific hairdresser (hairdresser_id) to a chosen salon (salon_id), fa
 ![web](https://github.com/magdalenahuget/hairSalons/blob/ff38cd848a87cff1f70f21e131a069ed6fa9e96b/src/main/resources/static/css/web.PNG)
 
 **Setup:**  
-__Clone Repository:__
-
-bash
-Copy code
+__Clone Repository:__   
 git clone <repository-url>
-Build and Run:
+
+__Build and Run:__
 
 Open the project in IntelliJ or your preferred Java IDE.
 Ensure Java 17 is installed.
