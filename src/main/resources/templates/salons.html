@@ -12,13 +12,14 @@
         <th>Hair Salon Capacity</th>
         <th>City</th>
         <th>Salon Name</th>
-        <th th:if="${salon}">Hairdressers</th>
+        <th>Hairdressers</th>
     </tr>
     <tr th:each="salon : ${salons}">
         <td th:text="${salon.getId()}"></td>
         <td th:text="${salon.getCapacity()}"></td>
         <td th:text="${salon.getCity()}"></td>
         <td th:text="${salon.getSalonName()}"></td>
+        <td th:text="${salon.getHairdressers()}"></td>
     </tr>
     <tr th:if="${salon}">
         <td th:text="${salon.getId()}"></td>

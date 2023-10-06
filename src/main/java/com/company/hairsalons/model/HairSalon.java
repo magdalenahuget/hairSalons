@@ -50,4 +50,9 @@ public class HairSalon {
         hairdresser.setHairSalon(null);
         hairdressers.remove(hairdresser);
     }
+
+    @Override
+    public String toString() {
+        return salonName;
+    }
 }
