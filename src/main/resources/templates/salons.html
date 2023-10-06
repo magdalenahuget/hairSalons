@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Salons</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link th:href="@{/css/general.css}" rel="stylesheet"/>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Hair Salon ID</th>
+        <th>Hair Salon Capacity</th>
+        <th>City</th>
+        <th>Room Name</th>
+        <th th:if="${salon}">Hairdressers</th>
+    </tr>
+    <tr th:each="salon : ${salons}">
+        <td th:text="${salon.getId()}"></td>
+        <td th:text="${salon.getCapacity()}"></td>
+        <td th:text="${salon.getCity()}"></td>
+        <td th:text="${salon.getSalonName()}"></td>
+    </tr>
+    <tr th:if="${salon}">
+        <td th:text="${salon.getId()}"></td>
+        <td th:text="${salon.getCapacity()}"></td>
+        <td th:text="${salon.getCity()}"></td>
+        <td th:text="${salon.getSalonName()}"></td>
+        <td th:text="${salon.getHairdressers()}"></td>
+    </tr>
+</table>
+</body>
+</html>
