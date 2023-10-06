@@ -41,3 +41,8 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #ccc;
 }
+
+.headers th{
+    border-bottom: 2px solid dimgrey;
+    border-top: 2px solid dimgrey;
+}
