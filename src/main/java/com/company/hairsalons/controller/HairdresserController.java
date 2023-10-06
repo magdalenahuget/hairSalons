@@ -26,7 +26,7 @@ public class HairdresserController {
     }
 
     @PostMapping
-    public String addRoom(@RequestBody Hairdresser Hairdresser) {
+    public String addHairdresser(@RequestBody Hairdresser Hairdresser) {
         hairdresserService.addHairdresser(Hairdresser);
         return "redirect:";
     }
@@ -38,7 +38,7 @@ public class HairdresserController {
         return "hairdressers";
     }
 
-    @DeleteMapping("/{hairdresser_id}")
+    @DeleteMapping("/delete/{hairdresser_id}")
     public String deleteHairdresser(@PathVariable("hairdresser_id") long HairdresserId){
         hairdresserService.removeHairdresser(HairdresserId);
         return "redirect:hairdressers/"+HairdresserId;

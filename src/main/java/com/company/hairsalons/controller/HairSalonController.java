@@ -24,7 +24,6 @@ public class HairSalonController {
         this.hairdresserService = hairdresserService;
     }
 
-
     @GetMapping
     public String getHairSalons(Model model) {
         Set<HairSalon> hairSalons = hairSalonService.getHairSalons();
